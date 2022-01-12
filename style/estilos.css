@@ -204,7 +204,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
 
+.main .cards__container article .card-down:hover{
+    cursor: pointer;
+    background-color: var(--DesaturatedBlue);
 }
 
 .main .cards__container article .card-down .card__title{
