@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*{
+    font-size: 62.5%; /* Ajuste de letra para utilizar el rem para el tamaño de letra */
+    margin:0;
+    padding: 0;
+    --BlueProfile: hsl(246, 80%, 60%);
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --LightRed: hsl(15, 100%, 70%); /*work*/
+    --SoftBlue: hsl(195, 74%, 62%); /*reading*/
+    --LightRedTwo: hsl(348, 100%, 68%); /*study*/
+    --LimeGreen: hsl(145, 58%, 55%); /*exercise*/
+    --Violet : hsl(264, 64%, 52%); /*english*/
+    --SoftOrange: hsl(43, 84%, 65%); /*pet*/
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--VeryDarkBlue);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.main{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.main .porfile__card{
+    background-color: var(--DarkBlue);
+    border-radius: 20px;    
+    width: 20%;
+    
+}
+
+.main .porfile__card .porfile__card-up{
+    background-color: var(--BlueProfile);
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+
+}
+
+.main .porfile__card .porfile__card-up figure{
+    border: 2px solid white;
+    width: 75px;
+    height: 75px;
+    background-image: url(../assets/images/image-stiven.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+    padding: 2%;
+    box-sizing: border-box; 
+    margin-top: -30%;
+}
+
+.main .porfile__card .porfile__card-up div{
+    margin-top: 15%;
+}
+
+.main .porfile__card .porfile__card-up div h3{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--PaleBlue);
+    margin-bottom: 2%;
+
+}
+
+.main .porfile__card .porfile__card-up div p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: white;
+    width: 80%;
+
+}
+
+.main .porfile__card .porfile__card-down{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 8%;
+}
+
+.main .porfile__card .porfile__card-down p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--PaleBlue);
+}
+
+.main .porfile__card .porfile__card-down p:hover{
+    
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 1.4rem;
+
+
+}
+
+.main .cards__container{
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    box-sizing: border-box;
+
+}
+
+.main .cards__container article{
+    width: 32%;
+    height: 47%;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;   
+}
+
+.main .cards__container .card__exercise{
+    align-self: flex-end;
+}
+
+
+.main .cards__container .card__lenguage{
+    align-self: flex-end;
+
+}
+
+
+.main .cards__container .card__pet{
+    align-self: flex-end;
+}
+
+.main .cards__container article .card-up{
+    height: 40%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+}
+
+.main .cards__container .card__work .card-up{
+    background-color: var(--LightRed);
+}
+
+.main .cards__container .card__read .card-up{
+    background-color: var(--SoftBlue);
+}
+
+.main .cards__container .card__study .card-up{
+    background-color: var(--LightRedTwo);
+}
+
+
+.main .cards__container .card__exercise .card-up{
+    background-color: var(--LimeGreen);
+}
+
+.main .cards__container .card__lenguage .card-up{
+    background-color: var(--Violet);
+}
+
+.main .cards__container .card__pet .card-up{
+    background-color: var(--SoftOrange);
+}
+
+.main .cards__container article .card-up img{
+    width: 50px;
+    height: auto;
+    margin-right: 5%;
+    position: absolute;
+}
+
+.main .cards__container article .card-down{
+    border-radius: 20px;
+    background-color: var(--DarkBlue);
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main .cards__container article .card-down .card__title{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main .cards__container article .card-down div h3{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: white;
+
+}
+
+.main .cards__container article .card-down div img{
+    height: 20%;
+    width: auto;
+    
+
+}
+
+.main .cards__container article .card-down .card__hour{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    color: white;
+    width: 80%;
+
+}
+
+.main .cards__container article .card-down .card__last_hour{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-top: -8%;
+    color: var(--PaleBlue);
+
+}
