@@ -1,0 +1,190 @@
+@media screen and (max-width: 900px){
+    body{
+        height: auto;
+        width: auto;
+    
+    }
+    
+    .main{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+
+    .main .porfile__card{
+        height: 25rem;
+        width: 60%;
+    }
+
+    .main .porfile__card .porfile__card-up{
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       padding-left: 3%;
+    }
+
+    .main .porfile__card .porfile__card-up figure{
+        border: 2px solid white;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    .main .porfile__card .porfile__card-up div{
+        margin-top: 0%;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .main .porfile__card .porfile__card-up div h3{
+        font-size: 1.6rem;
+
+    }
+
+    .main .porfile__card .porfile__card-up div p{
+        width: auto;
+    }
+
+    .main .porfile__card .porfile__card-down{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    
+    .main .porfile__card .porfile__card-down p{
+        font-size: 2rem;
+    }
+
+    .main .porfile__card .porfile__card-down p:hover{
+        font-size: 2.3rem;
+    }
+
+
+    .main .cards__container{
+        height: auto;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 60%;
+
+
+    }
+
+    .main .cards__container article{
+        width: 100%;
+        margin-top: 50px;
+        height: 22rem;
+    }
+
+    .main .cards__container .card__exercise{
+        align-self: center;
+    }
+    
+    
+    .main .cards__container .card__lenguage{
+        align-self: center;
+    }
+    
+    
+    .main .cards__container .card__pet{
+        align-self: center;
+    }
+
+    .main .cards__container article .card-up{
+        height: 50%;
+    }
+
+    .main .cards__container article .card-up img{
+        width: 70px;
+    }
+
+    .main .cards__container article .card-down{
+        height: 80%;
+        margin-top: -17%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main .cards__container article .card-down .card__title{
+        width: 80%;
+        margin-top: 3%;
+        
+    }
+
+    .main .cards__container article .card-down .card__descr{
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main .cards__container article .card-down .card__descr .card__hour{
+        margin-top: 0;
+        width: 50%;   
+    }
+
+    .main .cards__container article .card-down .card__descr .card__last_hour{
+        margin-top: 0;
+        width: 50%;   
+        text-align: end;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    .main .porfile__card{
+        width: 70%;
+        align-items: center;
+    }
+
+    .main .cards__container{
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media screen and (max-width: 700px){
+    .main .porfile__card{
+        width: 80%;
+        align-items: center;
+    }
+
+    .main .cards__container{
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+    .main .porfile__card{
+        width: 90%;
+        align-items: center;
+    }
+
+    .main .cards__container{
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main{
+        width: 100%;
+    }
+}
