@@ -24,9 +24,9 @@
                 </div>
             </div>
             <div class="porfile__card-down">
-                <p>Daily</p>
-                <p>Weekly</p>
-                <p>Monthly</p>
+                <button onclick="CalculoDiario()" id="DailyButton">Daily</button>
+                <button onclick="CalculoSemanal()" id="WeeklyButton">Weekly</button>
+                <button onclick="CalculoMensual()" id="MonthlyButton">Monthly</button>
             </div>
 
        </article>
@@ -43,11 +43,11 @@
                        <img src="assets/icons/icon-ellipsis.svg" alt="">
                    </div>
                    <div class="card__descr">
-                        <p class="card__hour">
-                                32Hrs
+                        <p class="card__hour"  id="outWorkHour">
+                                
                         </p>
-                        <p class="card__last_hour">
-                                Last week - 30Hrs
+                        <p class="card__last_hour" id="outWorkLastHour">
+                                
                         </p>
                    </div>
 
@@ -66,11 +66,11 @@
                         <img src="assets/icons/icon-ellipsis.svg" alt="">
                     </div>
                     <div class="card__descr">
-                        <p class="card__hour">
-                            5Hrs
+                        <p class="card__hour" id="outReadHour">
+                            
                         </p>
-                        <p class="card__last_hour">
-                            Last week - 6Hrs
+                        <p class="card__last_hour" id="outReadLastHour">
+                            
                         </p>
                     </div>
 
@@ -88,11 +88,11 @@
                         <img src="assets/icons/icon-ellipsis.svg" alt="">
                     </div>
                     <div class="card__descr">
-                        <p class="card__hour">
-                            20Hrs
+                        <p class="card__hour" id="outStudyHour">
+                            
                         </p>
-                        <p class="card__last_hour">
-                            Last week - 16Hrs
+                        <p class="card__last_hour" id="outStudyLastHour">
+                            
                         </p>
                     </div>
                 </div>               
@@ -109,11 +109,11 @@
                         <img src="assets/icons/icon-ellipsis.svg" alt="">
                     </div>
                     <div class="card__descr">
-                        <p class="card__hour">
-                            6Hrs
+                        <p class="card__hour" id="outExcerciseHour">
+                            
                         </p>
-                        <p class="card__last_hour">
-                            Last week - 5Hrs
+                        <p class="card__last_hour" id="outExcerciseLastHour">
+                            
                         </p>
                     </div>
 
@@ -131,11 +131,11 @@
                         <img src="assets/icons/icon-ellipsis.svg" alt="">
                     </div>
                     <div class="card__descr">
-                        <p class="card__hour">
-                            12Hrs
+                        <p class="card__hour" id="outLenguageHour">
+                            
                         </p>
-                        <p class="card__last_hour">
-                            Last week - 15Hrs
+                        <p class="card__last_hour" id="outLenguageLastHour">
+                            
                         </p>
                     </div>
 
@@ -153,11 +153,11 @@
                     <img src="assets/icons/icon-ellipsis.svg" alt="">
                 </div>
                 <div class="card__descr">
-                    <p class="card__hour">
-                        5Hrs
+                    <p class="card__hour" id="outPetHour">
+                        
                     </p>
-                    <p class="card__last_hour">
-                        Last week - 4Hrs
+                    <p class="card__last_hour" id="outPetLastHour">
+                        
                     </p>
                 </div>
 
@@ -166,5 +166,7 @@
 
        </div>
    </main>
+   <script src="index.js"></script>
 </body>
+
 </html>

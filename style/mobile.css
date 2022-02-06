@@ -57,11 +57,11 @@
     }
     
     
-    .main .porfile__card .porfile__card-down p{
+    .main .porfile__card .porfile__card-down button{
         font-size: 2rem;
     }
 
-    .main .porfile__card .porfile__card-down p:hover{
+    .main .porfile__card .porfile__card-down button:hover{
         font-size: 2.3rem;
     }
 
